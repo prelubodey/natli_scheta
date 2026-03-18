@@ -28,7 +28,7 @@ if not TELEGRAM_BOT_TOKEN or not GEMINI_API_KEY:
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Используем модель gemini-2.5-flash
-model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
+model = genai.GenerativeModel('gemini-3.1-flash-lite-preview', generation_config={"response_mime_type": "application/json"})
 
 bot = Bot(token=TELEGRAM_BOT_TOKEN)
 dp = Dispatcher()
