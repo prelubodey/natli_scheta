@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore downloaded/generated Excel and CSV files
+*.xlsx
+*.csv
+*.pdf
+*.jpg
+*.jpeg
+*.png
+
+# Ignore virtual environments
+venv/
+.env/
+env/

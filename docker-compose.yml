@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: payment_calendar_bot
+    restart: unless-stopped
+    # Читаем переменные окружения из локального файла .env
+    env_file:
+      - .env
